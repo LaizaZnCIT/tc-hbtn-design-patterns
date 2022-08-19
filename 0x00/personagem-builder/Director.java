@@ -1,5 +1,5 @@
 public class Director {
-    void buildGuerreiro(Builder biulder){
+   public void buildGuerreiro(Builder biulder){
         biulder.setNome("Guerreiro");
         biulder.setTipo(TipoPersonagem.GUERREIRO);
         biulder.setInteligencia(1);
