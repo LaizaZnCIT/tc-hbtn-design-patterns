@@ -6,6 +6,7 @@ public abstract class Bebida {
 
     @Override
     public String toString(){
-        return String.format("Preco: %.2f - Ingredientes: %s", obterPreco(), obterIngredientes());
+        java.util.Locale locale = new java.util.Locale("pt", "BR");
+        return String.format(locale, "Preco: %.2f - Ingredientes: %s", obterPreco(), obterIngredientes());
     }
 }
