@@ -106,6 +106,6 @@ public class Impressao {
         } else {
             frenteOuVerso = "frente apenas";
         }
-        return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, %s. total: R$ %.2f", getPaginasTotais(), getPaginasColoridas(), getPaginasTotais() - getPaginasColoridas(), frenteOuVerso, calcularTotal());
+        return String.format(locale, "total de paginas: %d, total coloridas: %d, total preto e branco: %d, %s. total: R$ %.2f", getPaginasTotais(), getPaginasColoridas(), getPaginasTotais() - getPaginasColoridas(), frenteOuVerso, calcularTotal());
     }
 }
